@@ -12,9 +12,11 @@ public class TimeMeasure {
 					s +=".";
 				}
 			}
-			k=s.length();
+			
 			long stopTime = System.nanoTime();
-			long diff = (stopTime-startTime);
+			k = s.length();
+
+                        long diff = (stopTime-startTime);
 			System.out.println(String.format("%,d", diff));
 		}
 	}
